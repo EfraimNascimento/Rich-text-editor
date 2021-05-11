@@ -9,7 +9,11 @@
     <title>Rich text editor in JS</title>
 </head>
 <body onload="enableEditMode();">
-    <div class="editor">
+<div class="container">
+    <header>
+        <H1>Rich Text Editor</H1>
+    </header>
+    <div class="editorOpitions">
         <button onclick="execCmd('bold');"><i class="fas fa-bold"></i></button>
         <button onclick="execCmd('italic');"><i class="fas fa-italic"></i></button>
         <button onclick="execCmd('underline');"><i class="fas fa-underline"></i></button>
@@ -61,11 +65,12 @@
             <option value="7">7</option>
         </select>
         Cor: <input type="color"  onchange="execCommandWithArg('foreColor', this.value)"/>
-        Cor de fundo: <input type="color"  onchange="execCommandWithArg('hiliteColor', this.value)"/>
-        <button onclick="execCommandWithArg('insertImage', prompt('Coloque o URL da imagen'));"><i class="fas fa-file-image"></i></button>
-        <button onclick="execCmd('selectAll');">selecionar tudo</button>
-
+        Cor de fundo: <input type="color"  onchange="execCommandWithArg('HiliteColor', this.value)"/>
+        <button onclick="execCmd('selectAll');">Selecionar tudo</button>
     </div>
-    <iframe name="richTextField"></iframe>
+    <div class="textField">
+    <iframe name="richTextField" id="textEditor"></iframe>
+    </div>
+</div>
 </body>
 </html>
