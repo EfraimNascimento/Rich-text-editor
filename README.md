@@ -1,10 +1,6 @@
 # Rich-text-editor
 Aplicando Javascript na prática
 
-## Tarefas
-
-Aplicar responsividade na página
-
 ## Ícones
 
 :package: nova funcionalidade
